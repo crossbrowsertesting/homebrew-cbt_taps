@@ -1,4 +1,4 @@
-cask "vmware-fusion" do
+cask "vmware-fusion-11" do
   version "11.5.0-14634996"
   sha256 "7fe7897a0581564dd491bdb3956db31900289f31a069d2cae8e611bf154557d3a"
 
