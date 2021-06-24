@@ -1,3 +1,6 @@
+# typed: false
+# frozen_string_literal: true
+
 class NodeAT8Legacy < Formula
   desc "Platform built on V8 to build network applications"
   homepage "https://nodejs.org/"
@@ -5,10 +8,9 @@ class NodeAT8Legacy < Formula
   sha256 "5b0d96db482b273f0324c299ead86ecfbc5d033516e5fc37c92cfccb933ef6ff"
 
   bottle do
-    cellar :any
-    sha256 "9311b253c11ed1416af523ec846816513ef457aff56253680f6b2b0cdce83da1" => :catalina
-    sha256 "53ab3e9a76b2d30f08c9ef55f8ac30a4f03c845bc9651df25162f7014a0c1aba" => :mojave
-    sha256 "e42169c34732d2353e1a45ceb04449ed6917fd1b3eb7b995725459f65afaab25" => :high_sierra
+    sha256 cellar: :any, catalina:    "9311b253c11ed1416af523ec846816513ef457aff56253680f6b2b0cdce83da1"
+    sha256 cellar: :any, mojave:      "53ab3e9a76b2d30f08c9ef55f8ac30a4f03c845bc9651df25162f7014a0c1aba"
+    sha256 cellar: :any, high_sierra: "e42169c34732d2353e1a45ceb04449ed6917fd1b3eb7b995725459f65afaab25"
   end
 
   keg_only :versioned_formula
